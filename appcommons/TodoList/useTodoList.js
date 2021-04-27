@@ -12,7 +12,7 @@ export default function useTodoList() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [dueDate, setDueDate] = useState("");
-  const [type, setType] = useState("");
+  const [type, setType] = useState("SUCCESS");
   const [status, setStatus] = useState("");
   const [isTitleError, setIsTitleError] = useState(false);
   const [isDescriptionError, setIsDescriptionError] = useState(false);
@@ -80,7 +80,16 @@ export default function useTodoList() {
       setType(type);
       setStatus(status);
       setIsEditTODO(true);
+      clearError();
     }
+  }
+
+  function clearError() {
+    setIsTitleError(false);
+    setIsDescriptionError(false);
+    setIsDueDateError(false);
+    setIsTypeError(false);
+    setIsStatusError(false);
   }
 
   function updateTodoDetails() {
@@ -119,6 +128,7 @@ export default function useTodoList() {
     setType("");
     setStatus("");
     setIsEditTODO(false);
+    clearError();
   }
 
   function isValidForm() {
