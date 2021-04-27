@@ -41,3 +41,8 @@ Application will run at
 ```sh
 http://localhost:3000/
 ```
+
+Sample Screen
+
+![TodoList](https://user-images.githubusercontent.com/62496680/116240676-b9843080-a781-11eb-9ea6-a4b8998cd256.PNG)
+
