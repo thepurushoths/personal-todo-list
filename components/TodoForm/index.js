@@ -61,13 +61,16 @@ function TodoForm({ biz }) {
         }}
         onChange={(event) => {
           if (
-            event.target.value.length < 30 &&
+            event.target.value.length < 80 &&
             ValidUtils.isValidText(event.target.value)
           ) {
             biz.setDescription(event.target.value);
           }
         }}
       />
+      <small htmlFor="due-at" style={{ fontSize: "0.75rem", color: "#686868" }}>
+        Maximum 80 characters
+      </small>
 
       <label key="type-label" htmlFor="type" style={{ display: "block" }}>
         Type
