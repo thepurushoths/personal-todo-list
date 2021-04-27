@@ -1,4 +1,4 @@
-# TODO
+# Personal TODO app
 
 few steps requires to run this application
 
