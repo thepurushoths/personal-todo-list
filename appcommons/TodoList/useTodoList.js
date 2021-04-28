@@ -93,7 +93,7 @@ export default function useTodoList() {
   }
 
   function updateTodoDetails() {
-    let request = { [id]: { id, title, description, dueDate, type } };
+    let request = { [id]: { id, title, description, dueDate, type, status } };
     dispatch(addTODO(request));
     clearForm();
   }
