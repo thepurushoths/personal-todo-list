@@ -61,7 +61,7 @@ export default function useTodoList() {
     //   Universally Unique IDentifier
     const _id = uuidv4();
     let request = {
-      [`${_id}`]: { id: _id, title, description, dueDate, type, status },
+      [`${_id}`]: { id: _id, title, description, dueDate, type, status: "ACTIVE" },
     };
     dispatch(addTODO(request));
     setIsEditTODO(false);
