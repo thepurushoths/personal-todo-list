@@ -20,4 +20,4 @@ jobs:
           heroku_app_name: ${{secrets.TODO_HEROKU_APP_NAME}} #Must be unique in Heroku
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           branch: main
-          procfile: 'web: npm run start'
+          procfile: 'web: npm start'
