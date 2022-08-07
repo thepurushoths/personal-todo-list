@@ -13,5 +13,5 @@ jobs:
       uses: AkhileshNS/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "todo-list-app"
+        heroku_app_name: "todo-list-sample-react-app"
         heroku_email: "purushspn111@gmail.com"
