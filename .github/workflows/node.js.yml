@@ -19,4 +19,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.TODO_HEROKU_APP_NAME}} #Must be unique in Heroku
           heroku_email: ${{secrets.HEROKU_EMAIL}}
-          procfile: 'npm run start'
+          branch: main
+          procfile: 'web: npm run start'
